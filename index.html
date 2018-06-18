@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bd5a2">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+        <meta charset="utf-8">
+        <title>Showpad SDK</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+            <span class="week">A CLI tool to help you build your own Experience App</span>
+            <h2>Software Development Kit (SDK)</h2>
+            <span class="colors accent"></span>
+            <section>
+                <p>
+                    Next to Classic and Advanced Experiences, you can now also create your own Experience App. It’s designed to help our customers build their own immersive experiences, in-house or with their preferred agency so they can enjoy all the power of Showpad.
+                </p>
+                <p>Why build your own Experience App?</p>
+                <ul>
+                    <li>
+                        <b>Limitless:</b> An Experience is built with HTML, CSS, and JS, so you’re only limited by your imagination
+                    </li>
+                    <li>
+                        <b>Easy:</b> Integrate easily with Showpad using the Javascript API and the REST API
+                    </li>
+                    <li>
+                        <b>Customizable:</b> Make your Experience configurable so the marketing admin can make adjustments.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Step by Step Guide</h3>
+                <figure> 
+                    <a href="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv" target="_blank"><img src="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv.png" /></a>
+                    <figcaption>View a full step by step video on how to set up your Experience App in the terminal.</figcaption>
+                </figure>
+                <div class="key">
+                    <b>Build a Basic Experience App</b>
+                </div>
+                <p>
+                    The first step in creating your experience app will be to download and install both Node.js and NPM (<i>Node Package Manager</i>) to your local machine. The most recent versions of Node.js and NPM can be found at <a href="https://www.npmjs.com/get-npm" target="_blank">https://www.npmjs.com/get-npm</a>.
+                </p>
+                <p>
+                    Next you'll want to open up your terminal application and create a new project directory using terminal commands <code>mkdir projectname</code> and <code>cd projectname</code>. The <code>mkdir</code> command will make a new directory whereas <code>cd</code> will change your directory.
+                </p>
+                <figure>
+                    <img src="https://placehold.it/1600x400"/>
+                    <figcaption>Creating and changing a project directory.</figcaption>
+                </figure>
+                <p>
+                    After you've created your project directory run <code>npm init</code> which will set up a new npm package. Don't worry about filling out the project details, you can always go back and edit it later.
+                </p>
+                <figure>
+                    <img src="https://placehold.it/1600x400"/>
+                    <figcaption>Initalizing the Node Project Manager.</figcaption>
+                </figure>
+                <p>
+                    Next you'll want to run the <code>npm install --save-dev @showpad/sdk</code> command. Just go ahead and grab some coffee while the SDK installs. This line of code will install the Showpad SDK, making the Showpad CLI available. With the CLI now availabe, you'll be able to testing and package your experience.
+                </p>
+                <p>
+                    To check if you've installed the SDK properly, go ahead and run <code>npx showpad help</code>. If all goes well, you'll see all of the commands available to the SDK, including <code>auth</code>, <code>experience</code>, <code>asset</code>, and <code>help</code>.
+                </p>
+                <figure>
+                        <img src="https://placehold.it/1600x400"/>
+                        <figcaption>All of Showpad's terminal commands.</figcaption>
+                    </figure>
+                <p>
+                    Now you'll want to hop into your Showpad admin dashboard. You can access your dashboard by going to <a href="https://www.showpad.biz" target="_blank">https://www.showpad.biz</a>.
+                </p>
+                <figure>
+                        <img src="images/dashboard-login.png" alt="Showpad Dashboard Login">
+                        <figcaption>Showpad's admin dashboard login screen.</figcaption>
+                </figure>
+                <p>
+                    Once inside your dashboard you'll want to get to your OAuth Client Manager. You can get there by going to <em>Settings &rAarr; Integrations &rAarr; API &rAarr; Manage OAuth Clients</em>. Once there go ahead and create a new OAuth Client and fill in all of the relevant details.
+                </p>
+                <figure>
+                        <img src="images/dashboard-home.png" alt="Showpad Dashboard Home">
+                        <figcaption>Showpad's admin dashboard home screen.</figcaption>
+                </figure>
+                <figure>
+                        <img src="images/dashboard-api.png" alt="Showpad Dashboard API">
+                        <figcaption>Admin API settings.</figcaption>
+                </figure>
+                <figure>
+                        <img src="images/dashboard-oauth.png" alt="Showpad Dashboard OAuth">
+                        <figcaption>All of your current OAuth clients. Don't worry if you don't have any yet!</figcaption>
+                </figure>
+                <p>
+                    Now that the OAuth Client has been created, go back into the terminal and run <code>npx showpad auth</code>, making sure to enter your login and OAuth details you just used in the previous steps.
+                </p>
+                <figure>
+                        <img src="https://placehold.it/1600x400"/>
+                        <figcaption>Link the Showpad SDK to your new Oauth client.</figcaption>
+                    </figure>
+                <p>
+                    Then you’ll run <code>showpad experience init</code> and enter in all of your details. This command will create the basic folder structure with the three basic fields necessary for an experience, the <code>index.html</code>, <code>manifest.json</code>, and <code>config.json</code>.
+                </p>
+                <figure>
+                        <img src="https://placehold.it/1600x400"/>
+                        <figcaption>Initialize your Showpad Experience.</figcaption>
+                    </figure>
+                <div class="key">
+                    <b>Test the Experience App</b>
+                </div>
+                <p>
+                    Run <code>showpad experience serve</code> in terminal, opening your experience on a local host in your browser.
+                </p>
+                <figure>
+                        <img src="https://placehold.it/1600x400"/>
+                        <figcaption>Test your Experience by running it locally on your browser.</figcaption>
+                    </figure>
+                <div class="key">
+                    <b>Package and Upload the Experience App</b>
+                </div>
+                <p>
+                    In your terminal run <code>showpad experience package</code>. This command will place a zipped file in your current directory.
+                </p>
+                <figure>
+                    <img src="https://placehold.it/1600x400"/>
+                    <figcaption>Your Experience app will be zipped and created as a .showpad file.</figcaption>
+                </figure>
+                <p>
+                    Back in your <a href="https://www.showpad.biz" target="_blank">Showpad Admin Dashboard</a>, create a new Channel by going to <em>Content &rAarr; Open Channel Builder &rAarr; Select a Channel &rAarr; Create a New Channel</em>.
+                </p>
+                <img src="images/dashboard-home.png" alt="Showpad Dashboard Home">
+                <img src="images/dashboard-content.png" alt="Showpad Dashboard Content">
+                <img src="images/dashboard-channel-builder.png" alt="Showpad Dashboard Channel Builder">
+                <img src="images/dashboard-channels.png" alt="Showpad Dashboard Channels">
+                <p>
+                    Go ahead and name your Channel once you get there and select the option that says <b>Your Experience App</b>. You're free to create the Channel once you've done that.
+                </p>
+                <img src="images/dashboard-create-new.png" alt="Showpad Dashboard Create New Channel">
+                <p>
+                    Once your Experince App channel has been created you can upload the Experience App by selecting the zipped <code>.showpad</code> file that was created after running <code>showpad experience package</code>.
+                </p>
+                <p>
+                    Click <b>Publish Experience</b> and voilà! You've published your first Experience App! 
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
