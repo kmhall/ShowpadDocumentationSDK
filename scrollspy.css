@@ -2,7 +2,7 @@ body {
     position: relative;
 }
 .affix {
-    top: 140px;
+    top: 160px;
     z-index: 9999 !important;
 }
 
