@@ -17,3 +17,9 @@ body {
       margin-left: 150px;
   }
 }
+
+#noHeadbutt { 
+    margin-top: -300px;        /* Size of fixed header */
+    padding-bottom: 300px; 
+    display: block; 
+  }
