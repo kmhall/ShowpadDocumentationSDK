@@ -10,11 +10,31 @@
         <meta name="theme-color" content="#ffffff">
         <meta charset="utf-8">
         <title>Showpad SDK</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="scrollspy.css">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <main>
+    <body data-spy="scroll"  data-target="#navbar-example3" data-offset="240">
+        <main class="container">
+                <div class="row">
+                        <nav class="col-sm-3 navbar navbar-light bg-light" id="navbar-example3" >   
+                                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="50px">
+                                  <!-- <li><a href="#section1">Section 1</a></li> -->
+                                  <!-- <li><a href="#section2">Section 2</a></li>
+                                  <li><a href="#section3">Section 3</a></li> -->
+                                  <li class="dropdown">
+                                    <a href="#section1">Step by Step Guide</a>
+                                    <ul class="nav nav-pills nav-stacked subsections ml-3 my-1">
+                                          <li><a href="#section11">Build a Basic Experience App</a></li>
+                                          <li><a href="#section12">Test the Experience App</a></li>
+                                          <li><a href="#section13">Package and Upload</a></li>
+
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </nav>
+        <div class="col-sm-9" >           
             <span class="subtitle">A CLI tool to help you build your own Experience App</span>
             <h2>Software Development Kit (SDK)</h2>
             <span class="colors accent"></span>
@@ -36,13 +56,13 @@
                 </ul>
             </section>
             <section>
-                <h3>Step by Step Guide</h3>
+                <h3 id="section1">Step by Step Guide</h3>
                 <figure> 
                     <a href="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv" target="_blank"><img src="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv.png" alt="A full step by step video on how to set up your Experience App in the terminal"/></a>
                     <figcaption>View a full step by step video on how to set up your Experience App in the terminal.</figcaption>
                 </figure>
-                <div class="key">
-                    <b>Build a Basic Experience App</b>
+                <div  id = "section11" class="key">
+                    <b >Build a Basic Experience App</b>
                 </div>
                 <p>
                     The first step in creating your experience app will be to download and install both Node.js and NPM (<i>Node Package Manager</i>) to your local machine. The most recent versions of Node.js and NPM can be found at <a href="https://www.npmjs.com/get-npm" target="_blank">https://www.npmjs.com/get-npm</a>.
@@ -115,7 +135,7 @@
                         <img src="images/terminal/showpad-experience-init.png" alt="Initialize your Showpad Experience"/>
                         <figcaption>Initialize your Showpad Experience.</figcaption>
                     </figure>
-                <div class="key">
+                <div id = "section12" class="key">
                     <b>Test the Experience App</b>
                 </div>
                 <p>
@@ -125,7 +145,7 @@
                         <img src="images/terminal/showpad-experience-serve.png" alt="Test your Experience by running it locally on your browser"/>
                         <figcaption>Test your Experience by running it locally on your browser.</figcaption>
                     </figure>
-                <div class="key">
+                <div id = "section13" class="key">
                     <b>Package and Upload the Experience App</b>
                 </div>
                 <p>
@@ -153,6 +173,12 @@
                     Click <b>Publish Experience</b> and voilà! You've published your first Experience App! 
                 </p>
             </section>
+        </div>
+    </div>
+
         </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>
