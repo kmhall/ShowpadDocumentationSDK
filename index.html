@@ -143,28 +143,28 @@
                     </figure>
                     <ul>
                         <li>
-                                <b>Package.json:</b> Identifies and lists basic information about the NPM project. Don't worry
-                                about the contents of this file.
+                            <b>Package.json:</b> Identifies and lists basic information about the NPM project. Don't worry about
+                            the contents of this file.
                         </li>
                         <li>
-                            
-                                <b>Src:</b> Must contain the files that will be used within your Experience. All user-created
-                                files should be in this directory.
-                            
+
+                            <b>Src:</b> Must contain the files that will be used within your Experience. All user-created files
+                            should be in this directory.
+
                         </li>
                         <li>
-                            
-                                <b>Config.json:</b> Can be used to allow the Showpad admin to make changes to your Experience's
-                                content on the fly.
+
+                            <b>Config.json:</b> Can be used to allow the Showpad admin to make changes to your Experience's
+                            content on the fly.
                         </li>
                         <li>
-                            
-                                <b>Index.html:</b> The starting place of your Experiences HTML
+
+                            <b>Index.html:</b> The starting place of your Experiences HTML
                         </li>
                         <li>
-                            
-                                <b>Manifest.json:</b> Contains general information about the Experience App
-                            
+
+                            <b>Manifest.json:</b> Contains general information about the Experience App
+
                         </li>
                     </ul>
 
@@ -286,12 +286,15 @@
                         <b>Customizing the App</b>
                     </div>
                     <p>
-                       Experience apps can be customized just like any other web application. A basic example of this process is having an index.html to display your page 
-                       while having an app.js pulling data from the Showpad Javascript API. 
+                        Experience apps can be customized just like any other web application. A basic example of this process is having an index.html
+                        to display your page while having an app.js pulling data from the Showpad Javascript API.
                     </p>
-                    <h3>Index.html</h3>
-                    <p>The <code>index.html</code> is the entrypoint of your Experience App. When your app is opened in Showpad, this html file is loaded inside an iframe or webview.</p>
-                    <p>Here is an example of a working <code>index.html</code> within an Experience App:</p>
+                    <b>Index.html</b>
+                    <p>The
+                        <code>index.html</code> is the entrypoint of your Experience App. When your app is opened in Showpad, this html file is
+                        loaded inside an iframe or webview.</p>
+                    <p>Here is an example of a working
+                        <code>index.html</code> within an Experience App:</p>
                     <pre><code>
     &lt;!DOCTYPE HTML&gt;
     &lt;html&gt;
@@ -306,9 +309,13 @@
         &lt;script src="app.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-                    <h3>App.js</h3>
-                    <p>The <code>app.js</code> file will be loaded by <code>index.html</code>. It is used to dynamically populate the page with information queried from the Showpad Javascript API.</p>
-                    <p>This is an example of a working <code>app.js</code> file that pulls data from the Showpad Javascript API:</p>                        
+                    <b>App.js</b>
+                    <p>The
+                        <code>app.js</code> file will be loaded by
+                        <code>index.html</code>. It is used to dynamically populate the page with information queried from the Showpad Javascript
+                        API.</p>
+                    <p>This is an example of a working
+                        <code>app.js</code> file that pulls data from the Showpad Javascript API:</p>
                     <pre><code>                 
     var loaded = false;
     window.onShowpadLibLoaded = function () {
@@ -323,8 +330,8 @@
         infobox.innerHTML += "Full Name:     " + uinfo.full_name + "\n";
         infobox.innerHTML += "Accessing Via: " + dinfo.app + "\n";
     };</code></pre>
-                    
-                    
+
+
 
 
 
