@@ -70,10 +70,12 @@
 
 
                         </ul>
-                        
+
 
                     </li>
-                    <li><a href="#support">Support</a></li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
 
                 </ul>
             </nav>
@@ -105,7 +107,7 @@
                     <div class="key">
                         <b>Example Experiences</b>
                     </div>
-                    
+
 
                     <span class="noHeadbutt" id="workflow"> &nbsp; </span>
                     <div class="key">
@@ -114,19 +116,60 @@
                     <ol>
                         <li>The basic foder structure of your experience is created with npm and the Showpad SDK</li>
                         <li>The experience is customized, configured, and tested on your local device</li>
-                        <li>The experience is packaged into a <code>.showpad</code> file</li>
+                        <li>The experience is packaged into a
+                            <code>.showpad</code> file</li>
                         <li>The experience is uploaded into Showpad</li>
                         <li>The Admin makes changes to the experience's configuration within Showpad</li>
                         <li>The finished experience is deployed to all Showpad users within your organization</li>
 
 
-                    
+
                     </ol>
 
                     <span class="noHeadbutt" id="structure"> &nbsp; </span>
                     <div class="key">
                         <b>Overall Structure</b>
                     </div>
+                    
+        <figure>
+                <pre>
+    .
+    ├── package.json
+    └── src
+        ├── config.json
+        ├── index.html
+        └── manifest.json</pre>
+                <figcaption>The basic directory structure of an Experience App</figcaption>
+        </figure>
+                    <ul>
+                        <li>
+                            <h3>Package.json</h3>
+                            <p>Identifies and lists basic information about the NPM project. Don't worry about the contents of this file.</p>
+
+                        </li>
+                        <li>
+                            <h3>Src</h3>
+                            <p>Must contain the files that will be used within your Experience. All user-created files should be
+                                in this directory.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>config.json</h3>
+                            <p>Can be used to allow the Showpad admin to make changes to your Experience's content on the fly.</p>
+                        </li>
+                        <li>
+                            <h3>index.html</h3>
+                            <p>The starting place of your Experiences HTML</p>
+                        </li>
+                        <li>
+                            <h3>manifest.json</h3>
+                            <p>Contains general information about the Experience App
+                                </p>
+                        </li>
+                    </ul>
+
+
+
 
 
 
@@ -319,14 +362,14 @@
 
                     <h3 id="support">Support</h3>
                     <p>
-                            <div class="key">
-                        <b>Support</b>
-                    </div>
+                        <div class="key">
+                            <b>Support</b>
+                        </div>
 
                         <br> If you have questions or feedback, please contact us via support@showpad.com.
                         <div class="key">
                             <b>License</b>
-                        <br>
+                            <br>
                         </div>
                         <br> See the license at https://www.showpad.com/developer-terms
                     </p>
