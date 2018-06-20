@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="home">
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bd5a2">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bd5a2">
         <meta name="msapplication-TileColor" content="#00aba9">
         <meta name="theme-color" content="#ffffff">
         <meta charset="utf-8">
@@ -15,7 +15,7 @@
     </head>
     <body>
         <main>
-            <span class="week">A CLI tool to help you build your own Experience App</span>
+            <span class="subtitle">A CLI tool to help you build your own Experience App</span>
             <h2>Software Development Kit (SDK)</h2>
             <span class="colors accent"></span>
             <section>
@@ -38,7 +38,7 @@
             <section>
                 <h3>Step by Step Guide</h3>
                 <figure> 
-                    <a href="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv" target="_blank"><img src="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv.png" /></a>
+                    <a href="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv" target="_blank"><img src="https://asciinema.org/a/4oOnC3u0oJgegTTOHYnQCJBfv.png" alt="A full step by step video on how to set up your Experience App in the terminal"/></a>
                     <figcaption>View a full step by step video on how to set up your Experience App in the terminal.</figcaption>
                 </figure>
                 <div class="key">
@@ -51,15 +51,19 @@
                     Next you'll want to open up your terminal application and create a new project directory using terminal commands <code>mkdir projectname</code> and <code>cd projectname</code>. The <code>mkdir</code> command will make a new directory whereas <code>cd</code> will change your directory.
                 </p>
                 <figure>
-                    <img src="https://placehold.it/1600x400"/>
+                    <img src="images/terminal/mkdir-cd.png" alt="Creating and changing a project directory"/>
                     <figcaption>Creating and changing a project directory.</figcaption>
                 </figure>
                 <p>
                     After you've created your project directory run <code>npm init</code> which will set up a new npm package. Don't worry about filling out the project details, you can always go back and edit it later.
                 </p>
                 <figure>
-                    <img src="https://placehold.it/1600x400"/>
+                    <img src="images/terminal/npm-init-start.png" alt="Initalizing the Node Project Manager"/>
                     <figcaption>Initalizing the Node Project Manager.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/terminal/npm-init.png" alt="Don't worry about filling in all of the prompted project details"/>
+                    <figcaption>Don't worry about filling in all of the prompted project details.</figcaption>
                 </figure>
                 <p>
                     Next you'll want to run the <code>npm install --save-dev @showpad/sdk</code> command. Just go ahead and grab some coffee while the SDK installs. This line of code will install the Showpad SDK, making the Showpad CLI available. With the CLI now availabe, you'll be able to testing and package your experience.
@@ -68,9 +72,13 @@
                     To check if you've installed the SDK properly, go ahead and run <code>npx showpad help</code>. If all goes well, you'll see all of the commands available to the SDK, including <code>auth</code>, <code>experience</code>, <code>asset</code>, and <code>help</code>.
                 </p>
                 <figure>
-                        <img src="https://placehold.it/1600x400"/>
-                        <figcaption>All of Showpad's terminal commands.</figcaption>
+                        <img src="images/terminal/npm-install-start.png" alt="The install begins"/>
+                        <figcaption>The install begins.</figcaption>
                     </figure>
+                <figure>
+                    <img src="images/terminal/npx-showpad-help.png" alt="All of Showpad's terminal commands"/>
+                    <figcaption>All of Showpad's terminal commands.</figcaption>
+                </figure>
                 <p>
                     Now you'll want to hop into your Showpad admin dashboard. You can access your dashboard by going to <a href="https://www.showpad.biz" target="_blank">https://www.showpad.biz</a>.
                 </p>
@@ -97,14 +105,14 @@
                     Now that the OAuth Client has been created, go back into the terminal and run <code>npx showpad auth</code>, making sure to enter your login and OAuth details you just used in the previous steps.
                 </p>
                 <figure>
-                        <img src="https://placehold.it/1600x400"/>
+                        <img src="images/terminal/npx-showpad-auth.png" alt="Link the Showpad SDK to your new Oauth client"/>
                         <figcaption>Link the Showpad SDK to your new Oauth client.</figcaption>
                     </figure>
                 <p>
                     Then you’ll run <code>showpad experience init</code> and enter in all of your details. This command will create the basic folder structure with the three basic fields necessary for an experience, the <code>index.html</code>, <code>manifest.json</code>, and <code>config.json</code>.
                 </p>
                 <figure>
-                        <img src="https://placehold.it/1600x400"/>
+                        <img src="images/terminal/showpad-experience-init.png" alt="Initialize your Showpad Experience"/>
                         <figcaption>Initialize your Showpad Experience.</figcaption>
                     </figure>
                 <div class="key">
@@ -114,7 +122,7 @@
                     Run <code>showpad experience serve</code> in terminal, opening your experience on a local host in your browser.
                 </p>
                 <figure>
-                        <img src="https://placehold.it/1600x400"/>
+                        <img src="images/terminal/showpad-experience-serve.png" alt="Test your Experience by running it locally on your browser"/>
                         <figcaption>Test your Experience by running it locally on your browser.</figcaption>
                     </figure>
                 <div class="key">
@@ -124,7 +132,7 @@
                     In your terminal run <code>showpad experience package</code>. This command will place a zipped file in your current directory.
                 </p>
                 <figure>
-                    <img src="https://placehold.it/1600x400"/>
+                    <img src="images/terminal/showpad-experience-package.png" alt="our Experience app will be zipped and created as a .showpad file"/>
                     <figcaption>Your Experience app will be zipped and created as a .showpad file.</figcaption>
                 </figure>
                 <p>
