@@ -143,7 +143,6 @@
                     </figure>
                     <ul>
                         <li>
-                            
                                 <b>Package.json:</b> Identifies and lists basic information about the NPM project. Don't worry
                                 about the contents of this file.
                         </li>
@@ -168,12 +167,6 @@
                             
                         </li>
                     </ul>
-
-
-
-
-
-
 
                 </section>
                 <section>
@@ -292,10 +285,46 @@
                         <!--  -->
                         <b>Customizing the App</b>
                     </div>
-                    <!-- <img src="http://via.placeholder.com/350x750" alt=""> -->
+                    <p>
+                       Experience apps can be customized just like any other web application. A basic example of this process is having an index.html to structure your page 
+                       while having an app.js to run scripts. 
+                    </p>
                     <h3>Index.html</h3>
-
+                    <p>The <code>index.html</code> is the entrypoint of your Experience App. When your app is opened in Showpad, this html file is loaded inside an iframe or webview.</p>
+                    <p>Here is an example of a working <code>index.html</code> within an Experience App:</p>
+                    <pre><code>
+    &lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+        &lt;pre id="info"&gt;&lt;/pre&gt;
+        &lt;script src="app.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
                     <h3>App.js</h3>
+                    <p>The <code>app.js</code> file will be loaded by <code>index.html</code>. It is used to dynamically populate the page with information queried from the Showpad Javascript API.</p>
+                    <p>This is an example of a working <code>app.js</code> file that pulls data from the Showpad Javascript API:</p>                        
+                    <pre><code>                 
+    var loaded = false;
+    window.onShowpadLibLoaded = function () {
+        if (loaded) {return;}
+        loaded = true;
+        var infobox = document.getElementById('info');
+        var uinfo = window.ShowpadLib.getUserInfo();
+        var dinfo = window.ShowpadLib.getDeviceInfo();
+        infobox.innerHTML += "Email:         " + uinfo.email + "\n";
+        infobox.innerHTML += "ID:            " + uinfo.id + "\n";
+        infobox.innerHTML += "Username:      " + uinfo.user_name + "\n";
+        infobox.innerHTML += "Full Name:     " + uinfo.full_name + "\n";
+        infobox.innerHTML += "Accessing Via: " + dinfo.app + "\n";
+    };</code></pre>
+                    
+                    
 
 
 

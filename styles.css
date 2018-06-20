@@ -61,9 +61,13 @@ blockquote {
     line-height: 2.4rem;
     margin-top: -8px;
 }
+pre code{
+    color: #1C7AB4;
+}
 
 
 code {
+    color:#1C7AB4;
     font-family: monospace;
     background: #E5E7EA;
     padding: 3px 3px 1px 3px;
