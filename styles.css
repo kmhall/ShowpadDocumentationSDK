@@ -7,6 +7,7 @@
 a {
     color: inherit;
     display: inline-block;
+    text-decoration: underline;
 }
 
 .accent {
@@ -129,13 +130,13 @@ footer span {
 }
 
 h2 {
-    font-size: 3.6rem;
-    line-height: 3.8rem;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
 }
 
 h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: 3.6rem;
+    font-weight: 700;
     padding-top: 40px;
 }
 
@@ -167,6 +168,7 @@ img {
 .key {
     border-left: 6px solid #E5E7EA;
     padding-left: 16px;
+    font-size: 2.4rem;
 }
 
 .lesson-list {
@@ -187,6 +189,10 @@ img {
 .lesson-list a:hover {
     font-weight: 500;
     transition: .2 ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav ul li {
@@ -216,12 +222,16 @@ pre {
 }
 
 ::selection {
-    background: #FEFFC4;
+    background: #badfff;
 }
 
 table {
     font-size: 1.4rem;
-    margin-top: -8px;
+    margin-top: 64px;
+}
+
+table code {
+    font-size: 1.6rem;
 }
 
 thead {
@@ -305,6 +315,12 @@ ul ul li {
 @media only screen and (max-width: 850px) {
     .col-sm-9 {
         padding-left: 120px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #section1 {
+        margin-left: 0;
     }
 }
 

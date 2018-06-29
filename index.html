@@ -82,7 +82,7 @@
             <div class="col-sm-9">
                 <span class="noHeadbutt" id="overview">&nbsp;</span>
                 <span class="week">A CLI tool to help you build your own Experience App</span>
-                <h2>Software Development Kit (SDK)</h2>
+                <h2>Software Development Kit</h2>
                 <span class="colors accent"></span>
                 <section>
                     <p>
@@ -114,7 +114,7 @@
                         <b>Workflow</b>
                     </div>
                     <ol>
-                        <li>The basic foder structure of your experience is created with npm and the Showpad SDK</li>
+                        <li>The basic folder structure of your experience is created with npm and the Showpad SDK</li>
                         <li>The experience is customized, configured, and tested on your local device</li>
                         <li>The experience is packaged into a
                             <code>.showpad</code> file</li>
@@ -395,6 +395,67 @@
                         Click
                         <b>Publish Experience</b> and voilà! You've published your first Experience App!
                     </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Message</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>wrong-extension</td>
+                                <td>The bundle should have the <code>.showpad</code> extension</td>
+                                <td>Your package should have the <code>.showpad</code> extension</td>
+                            </tr>
+                            <tr>
+                                <td>invalid-bundle</td>
+                                <td>The bundle could not be read/extracted</td>
+                                <td>The bundle was incorrectly packaged. Best to use the SDK for this</td>
+                            </tr>
+                            <tr>
+                                <td>manifest-not-found</td>
+                                <td>No <code>manifest.json</code> found</td>
+                                <td>We could not find a <code>manifest.json</code> file in the package</td>
+                            </tr>
+                            <tr>
+                                <td>manifest-invalid-format</td>
+                                <td>The <code>manifest.json</code> file could not be read</td>
+                                <td>The contents of the <code>manifest.json</code> file should be valid JSON as described above</td>
+                            </tr>
+                            <tr>
+                                <td>manifest-invalid-contents</td>
+                                <td>The manifest has invalid contents</td>
+                                <td>Identifier and version are not found in the manifest. See above for the correct structure</td>
+                            </tr>
+                            <tr>
+                                <td>invalid-version</td>
+                                <td>The given version in the manifest is invalid</td>
+                                <td>This version is already used and was used during another upload</td>
+                            </tr>
+                            <tr>
+                                <td>no-index-found</td>
+                                <td>No <code>index.html</code> found</td>
+                                <td>We could not find an <code>index.html</code> file</td>
+                            </tr>
+                            <tr>
+                                <td>config-invalid-format</td>
+                                <td>The <code>config.json</code> file could not be read</td>
+                                <td>The <code>config.json</code> file is invalid JSON</td>
+                            </tr>
+                            <tr>
+                                <td>config-invalid-contents</td>
+                                <td>The contents in <code>config.json</code> could not be parsed</td>
+                                <td>The contents member in <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
+                            </tr>
+                            <tr>
+                                <td>config-invalid-labels</td>
+                                <td>The labels in <code>config.json</code> could not be parsed</td>
+                                <td>The labels member in <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <h3 id="configuring">Configure Tour Experience</h3>
                     <span class="noHeadbutt" id="manifest"> &nbsp; </span>
@@ -443,12 +504,12 @@
                             <b>Support</b>
                         </div>
 
-                        <br> If you have questions or feedback, please contact us via support@showpad.com.
+                        <br> If you have questions or feedback, please contact us via <a href="mailto:support@showpad.com">support@showpad.com</a>.
                         <div class="key">
                             <b>License</b>
                             <br>
                         </div>
-                        <br> See the license at https://www.showpad.com/developer-terms
+                        <br> See the license at <a href="https://www.showpad.com/developer-terms" target="_blank">https://www.showpad.com/developer-terms</a>
                     </p>
                 </section>
             </div>
