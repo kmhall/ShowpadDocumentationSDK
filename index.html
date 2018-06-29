@@ -52,6 +52,9 @@
                             <li>
                                 <a href="#section13">Package and Upload</a>
                             </li>
+                            <li>
+                                <a href="#section14">Validation Errors</a>
+                            </li>
 
                         </ul>
                     </li>
@@ -394,78 +397,103 @@
                     <p>
                         Click
                         <b>Publish Experience</b> and voilà! You've published your first Experience App!
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Key</th>
-                                <th>Message</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>wrong-extension</td>
-                                <td>The bundle should have the <code>.showpad</code> extension</td>
-                                <td>Your package should have the <code>.showpad</code> extension</td>
-                            </tr>
-                            <tr>
-                                <td>invalid-bundle</td>
-                                <td>The bundle could not be read/extracted</td>
-                                <td>The bundle was incorrectly packaged. Best to use the SDK for this</td>
-                            </tr>
-                            <tr>
-                                <td>manifest-not-found</td>
-                                <td>No <code>manifest.json</code> found</td>
-                                <td>We could not find a <code>manifest.json</code> file in the package</td>
-                            </tr>
-                            <tr>
-                                <td>manifest-invalid-format</td>
-                                <td>The <code>manifest.json</code> file could not be read</td>
-                                <td>The contents of the <code>manifest.json</code> file should be valid JSON as described above</td>
-                            </tr>
-                            <tr>
-                                <td>manifest-invalid-contents</td>
-                                <td>The manifest has invalid contents</td>
-                                <td>Identifier and version are not found in the manifest. See above for the correct structure</td>
-                            </tr>
-                            <tr>
-                                <td>invalid-version</td>
-                                <td>The given version in the manifest is invalid</td>
-                                <td>This version is already used and was used during another upload</td>
-                            </tr>
-                            <tr>
-                                <td>no-index-found</td>
-                                <td>No <code>index.html</code> found</td>
-                                <td>We could not find an <code>index.html</code> file</td>
-                            </tr>
-                            <tr>
-                                <td>config-invalid-format</td>
-                                <td>The <code>config.json</code> file could not be read</td>
-                                <td>The <code>config.json</code> file is invalid JSON</td>
-                            </tr>
-                            <tr>
-                                <td>config-invalid-contents</td>
-                                <td>The contents in <code>config.json</code> could not be parsed</td>
-                                <td>The contents member in <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
-                            </tr>
-                            <tr>
-                                <td>config-invalid-labels</td>
-                                <td>The labels in <code>config.json</code> could not be parsed</td>
-                                <td>The labels member in <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
-                            </tr>
-                        </tbody>
-                    </table>
 
-                    <h3 id="configuring">Configure Tour Experience</h3>
-                    <span class="noHeadbutt" id="manifest"> &nbsp; </span>
-                    <div class="key">
-                        <b>Manifest.json</b>
-                    </div>
-                    <p>The<code>manifest.json</code> contains general information about your Experience App like a unique identifier, version, name, description, and author.</p>
-                    <p>Here is an example of a working
-                        <code>manifest.json</code> within an Experience App:</p>
-                    <pre><code>
+                        <span class="noHeadbutt" id="section14"> &nbsp; </span>
+                        <div class="key">
+                            <b>Validation Errors</b>
+                        </div>
+                        <p>Through the Online Platform, you can upload your Experience App. Part of that process is a validation step to check if the package meets our requirements.</p>
+                
+                        <p>The table below contains an overview of the possible validation errors.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+
+                                    <th>Key</th>
+                                    <th>Message</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>wrong-extension</td>
+                                    <td>The bundle should have the
+                                        <code>.showpad</code> extension</td>
+                                    <td>Your package should have the
+                                        <code>.showpad</code> extension</td>
+                                </tr>
+                                <tr>
+                                    <td>invalid-bundle</td>
+                                    <td>The bundle could not be read/extracted</td>
+                                    <td>The bundle was incorrectly packaged. Best to use the SDK for this</td>
+                                </tr>
+                                <tr>
+                                    <td>manifest-not-found</td>
+                                    <td>No
+                                        <code>manifest.json</code> found</td>
+                                    <td>We could not find a
+                                        <code>manifest.json</code> file in the package</td>
+                                </tr>
+                                <tr>
+                                    <td>manifest-invalid-format</td>
+                                    <td>The
+                                        <code>manifest.json</code> file could not be read</td>
+                                    <td>The contents of the
+                                        <code>manifest.json</code> file should be valid JSON as described above</td>
+                                </tr>
+                                <tr>
+                                    <td>manifest-invalid-contents</td>
+                                    <td>The manifest has invalid contents</td>
+                                    <td>Identifier and version are not found in the manifest. See above for the correct structure</td>
+                                </tr>
+                                <tr>
+                                    <td>invalid-version</td>
+                                    <td>The given version in the manifest is invalid</td>
+                                    <td>This version is already used and was used during another upload</td>
+                                </tr>
+                                <tr>
+                                    <td>no-index-found</td>
+                                    <td>No
+                                        <code>index.html</code> found</td>
+                                    <td>We could not find an
+                                        <code>index.html</code> file</td>
+                                </tr>
+                                <tr>
+                                    <td>config-invalid-format</td>
+                                    <td>The
+                                        <code>config.json</code> file could not be read</td>
+                                    <td>The
+                                        <code>config.json</code> file is invalid JSON</td>
+                                </tr>
+                                <tr>
+                                    <td>config-invalid-contents</td>
+                                    <td>The contents in
+                                        <code>config.json</code> could not be parsed</td>
+                                    <td>The contents member in
+                                        <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
+                                </tr>
+                                <tr>
+                                    <td>config-invalid-labels</td>
+                                    <td>The labels in
+                                        <code>config.json</code> could not be parsed</td>
+                                    <td>The labels member in
+                                        <code>config.json</code> has invalid data. (Could be wrong types, wrong structure, …)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 id="configuring">Configure Tour Experience</h3>
+                        <span class="noHeadbutt" id="manifest"> &nbsp; </span>
+                        <div class="key">
+                            <b>Manifest.json</b>
+                        </div>
+                        <p>The
+                            <code>manifest.json</code> contains general information about your Experience App like a unique identifier, version, name,
+                            description, and author.</p>
+                        <p>Here is an example of a working
+                            <code>manifest.json</code> within an Experience App:</p>
+                        <pre><code>
     {
         "identifier": "com.showpad.showtime.demo",
         "name": "Showtime Demo",
@@ -474,8 +502,8 @@
         "author": "Showpad"
     }
                     </code></pre>
-                    <p>Important note: Each time a new version of an experience is created
-                    it is necessary to give the <code>manifest.json</code> a new, unique, version number in order to package/upload the experience properly. </p>
+                        <p>Important note: Each time a new version of an experience is created it is necessary to give the
+                            <code>manifest.json</code> a new, unique, version number in order to package/upload the experience properly. </p>
 
 
 
@@ -487,30 +515,32 @@
 
 
 
-                    <span class="noHeadbutt" id="config"> &nbsp; </span>
-                    <div class="key">
-                        <b>Config.json</b>
-                    </div>
-                    <img src="http://via.placeholder.com/350x750" alt="">
-                    <span class="noHeadbutt" id="changingAssets"> &nbsp; </span>
-                    <div class="key">
-                        <b>Changing Assets</b>
-                    </div>
-                    <img src="http://via.placeholder.com/350x750" alt="">
-
-                    <h3 id="support">Support</h3>
-                    <p>
+                        <span class="noHeadbutt" id="config"> &nbsp; </span>
                         <div class="key">
-                            <b>Support</b>
+                            <b>Config.json</b>
                         </div>
-
-                        <br> If you have questions or feedback, please contact us via <a href="mailto:support@showpad.com">support@showpad.com</a>.
+                        <img src="http://via.placeholder.com/350x750" alt="">
+                        <span class="noHeadbutt" id="changingAssets"> &nbsp; </span>
                         <div class="key">
-                            <b>License</b>
-                            <br>
+                            <b>Changing Assets</b>
                         </div>
-                        <br> See the license at <a href="https://www.showpad.com/developer-terms" target="_blank">https://www.showpad.com/developer-terms</a>
-                    </p>
+                        <img src="http://via.placeholder.com/350x750" alt="">
+
+                        <h3 id="support">Support</h3>
+                        <p>
+                            <div class="key">
+                                <b>Support</b>
+                            </div>
+
+                            <br> If you have questions or feedback, please contact us via
+                            <a href="mailto:support@showpad.com">support@showpad.com</a>.
+                            <div class="key">
+                                <b>License</b>
+                                <br>
+                            </div>
+                            <br> See the license at
+                            <a href="https://www.showpad.com/developer-terms" target="_blank">https://www.showpad.com/developer-terms</a>
+                        </p>
                 </section>
             </div>
         </div>
