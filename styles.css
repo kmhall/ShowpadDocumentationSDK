@@ -253,6 +253,14 @@ td:last-child {
     line-height: 2rem;
 }
 
+ol {
+    padding: 24px 0 24px 36px;
+}
+
+ol li {
+    padding: 8px 0 0 0;
+}
+
 ul {
     list-style: disc;
     padding-left: 32px;
