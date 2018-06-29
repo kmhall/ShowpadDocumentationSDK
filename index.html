@@ -313,7 +313,8 @@
                     <p>The
                         <code>app.js</code> file will be loaded by
                         <code>index.html</code>. It is used to dynamically populate the page with information queried from the Showpad Javascript
-                        API.</p>
+                        API.
+                    </p>
                     <p>This is an example of a working
                         <code>app.js</code> file that pulls data from the Showpad Javascript API:</p>
                     <pre><code>                 
@@ -399,9 +400,31 @@
                     <span class="noHeadbutt" id="manifest"> &nbsp; </span>
                     <div class="key">
                         <b>Manifest.json</b>
-
                     </div>
-                    <img src="http://via.placeholder.com/350x750" alt="">
+                    <p>The<code>manifest.json</code> contains general information about your Experience App like a unique identifier, version, name, description, and author.</p>
+                    <p>Here is an example of a working
+                        <code>manifest.json</code> within an Experience App:</p>
+                    <pre><code>
+    {
+        "identifier": "com.showpad.showtime.demo",
+        "name": "Showtime Demo",
+        "version": "1.0.0",
+        "description": "A demo Experience for Showtime",
+        "author": "Showpad"
+    }
+                    </code></pre>
+                    <p>Important note: Each time a new version of an experience is created
+                    it is necessary to give the <code>manifest.json</code> a new, unique, version number in order to package/upload the experience properly. </p>
+
+
+
+
+
+
+
+
+
+
 
                     <span class="noHeadbutt" id="config"> &nbsp; </span>
                     <div class="key">
