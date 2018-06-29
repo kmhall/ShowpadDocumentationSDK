@@ -17,6 +17,10 @@ a {
     margin-top: 16px;
 }
 
+.affix {
+    top: 80px;
+}
+
 b {
     font-weight: 600;
 }
@@ -74,9 +78,18 @@ code {
     font-size: 1.9rem;
 }
 
+.col-sm-9 {
+    padding-left: 40px;
+}
+
 
 div, section {
     margin-top: 40px;
+}
+
+li.active .active a {
+    background-color: #badfff;
+    color: #065ba5;
 }
 
 em {
@@ -176,6 +189,15 @@ img {
     transition: .2 ease-in-out;
 }
 
+nav ul li {
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.nav>li>a {
+    padding: 8px 15px;
+}
+
 main {
     padding-top: 80px;
     width: 87.5%;
@@ -259,6 +281,45 @@ ul ul li {
 /*ROTATING CSS ANIMATION ON ACCENTS*/
 .colors {
     animation: colors 15s infinite linear;
+}
+
+@media only screen and (max-width: 995px)  {
+    nav {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+
+    .col-sm-9{
+        padding-left: 56px;
+    }
+
+    main {
+        grid-column: 1/4;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .col-sm-9 {
+        padding-left: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .col-sm-9 {
+        padding-left: 0;
+    }
+
+    .container {
+        width: 80%;
+    }
 }
 
 @keyframes colors {
